@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Glasgow-Medium';
+  src: url('Glasgow-Medium.eot');
+  src: url('Glasgow-Medium.eot?#iefix') format('embedded-opentype'),
+       url('Glasgow-Medium.woff2') format('woff2'),
+       url('Glasgow-Medium.woff') format('woff'),
+       url('Glasgow-Medium.ttf') format('truetype'),
+       url('Glasgow-Medium.svg#Glasgow-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
