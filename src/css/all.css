@@ -87,6 +87,13 @@ footer a {
   font-size: 15px;
   font-family: 'InterstateCondensed';
 }
+.up-down{
+  display: inline;
+  margin-left: 15px;
+}
+.up-down a:nth-child(2){
+  margin-left: 3px;
+}
 .slogan {
   font: italic 11px 'Georgia';
   padding-top: 14px;
@@ -99,12 +106,15 @@ footer a {
 .Gastronomous {
   font-family: 'LadyCopra';
   font-size: 43px;
+  color:white;
   background: -webkit-linear-gradient(#3fa696, #238d7d);
   background: -o-linear-gradient(#3fa696, #238d7d);
-  background: linear-gradient(#3fa696, #238d7d);
+  background: linear-gradient(#000, #238d7d);
   -webkit-background-clip: text;
   -moz-background-clip: padding-box;
   color: transparent;
+
+    text-shadow: 1px 1px 1px #3fa696,  1px 2px 1px #def;
 }
 .underGastron {
   font: italic 12px 'Georgia';
@@ -143,29 +153,31 @@ ul.first li {
 }
 
 #search {
-  font: italic 11px 'Georgia';
-  margin: 10px 0 0 141px;
-  top: -42px;
-  border: 0;
-  width: 162px;
-  height: 23px;
-  outline: none;
-  padding-left: 14px;
-  padding-right: 30px;
-  box-shadow: inset 0.5px 0.5px 1px rgba(0, 0, 0, 0.5);
-  border-radius: 50px 50px 50px 50px;
-  /*background: -webkit-linear-gradient(bottom, #f2f2f2, #fefefe);
-background-image: background-image: background: -webkit-linear-gradient(bottom, #f2f2f2, #fefefe);
-background-image: background-image: background: -o-linear-gradient(bottom, #f2f2f2, #fefefe);
-background-image: background-image: background-image: background: -webkit-linear-gradient(bottom, #f2f2f2, #fefefe);
-background-image: background-image: background-image: background: -o-linear-gradient(bottom, #f2f2f2, #fefefe);
-background-image: background-image: background-image: background: linear-gradient(to top, #f2f2f2, #fefefe);
-background-image: background: -o-linear-gradient(bottom, #f2f2f2, #fefefe);
-background-image: background: linear-gradient(to top, #f2f2f2, #fefefe);
-  background: linear-gradient(to top, #f2f2f2, #fefefe);*/
-  background-color: white;
-  box-sizing: content-box;
+     font: italic 11px 'Georgia';
+    margin: 10px -8px 0 141px;
+    top: -42px;
+    border: 0;
+    width: 162px;
+    height: 23px;
+    outline: none;
+    padding-left: 15px;
+    padding-right: 30px;
+    box-shadow: inset 0.5px 0.5px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 50px 50px 50px 50px;
+    background-color: white;
+    box-sizing: content-box;
 }
+#search-button {
+    width: 30px;
+    height: 33px;
+    right: 26px;
+    border: 0px solid white;
+    position: absolute;
+    background: url(../img/search-button.png) no-repeat;
+    background-position: 0px 5px;
+    top: -30px;
+    left: 323px;
+   }
 #search:focus::-webkit-input-placeholder {line-height: 100px; transition: line-height 0.5s ease;}
 #search::-webkit-input-placeholder       {line-height: 10px;  transition: line-height 0.5s ease;}
 .menu {
@@ -176,37 +188,80 @@ background-image: background: linear-gradient(to top, #f2f2f2, #fefefe);
 }
 .menu ul {
   list-style-type: none;
+  
 }
 .menu li {
   left: 44px;
   display: inline-block;
-  margin-top: 30px;
+  margin-top: 18px;
   position: relative;
-  height: 40px;
-
+  height: 50px;
+  padding-top: 10px;
+text-align: center;
 }
 
 .menu li:hover {
-  background-color: #9d7244;
+  background-color: rgba(138, 99, 53, 0.6);
+  /*background: linear-gradient(green, red); 
+  -webkit-background-clip: text;
+  color: transparent;*/
   
 }
- li:hover {
- 
-}
- 
-.menu li:after {
 
-}
-.menu li:before {
+.menu li:hover:after {
       content: "";
-    position: absolute;
+  position: absolute;
     bottom: 0;
-    left: 65px;
+    left: 100px;
     border-top: 14px solid transparent;
-    border-left: 12px solid rgba(138, 99, 53, 0.67);
+    border-left: 12px solid rgba(138, 99, 53, 0.6);
     border-bottom: 13px solid transparent;
     width: 42px;
-    height: 30px;
+    height: 33px;
+}
+.menu li:hover:before{
+  content: '';
+    position: absolute;
+    left: -12px;
+    bottom: 0px;
+    border-top: 14px solid transparent;
+    border-right: 12px solid rgba(138, 99, 53, 0.6);
+    border-bottom: 13px solid transparent;
+    height: 32px;
+}
+.menu li:nth-child(3):hover:after{
+  left: 160px ;
+}
+.menu li:nth-child(4):hover:after{
+  left: 140px ;
+}
+.menu li:nth-child(6):hover:after{
+  left: 65px ;
+}
+.menu li:nth-child(1){
+  margin-left: 21px;
+  width: 100px;
+}
+.menu li:nth-child(2){
+  margin-left: 21px;
+  width: 100px;
+
+}
+.menu li:nth-child(3){
+  margin-left: 15px;
+  text-align: center;
+  width: 160px;
+}
+.menu li:nth-child(4){
+  margin-left: 20px;
+  width: 140px;
+}
+.menu li:nth-child(5){
+ margin-left: 14px;
+  width: 100px;
+}
+.menu li:nth-child(6){
+  margin-left: 25px;
 }
 .menu-slot {
   text-transform: uppercase;
@@ -218,8 +273,7 @@ background-image: background: linear-gradient(to top, #f2f2f2, #fefefe);
 .menu-under-slot {
   font: italic 13px 'Georgia';
   text-align: center;
-  padding-left: 20px;
-  margin-top: -10px;
+  top:-4px;
   display: inline-block;
   color: #794326;
 }
@@ -483,6 +537,26 @@ background-image: background: -o-linear-gradient(bottom, #f2f2f2, #fefefe);
 background-image: background: linear-gradient(to top, #f2f2f2, #fefefe);
   background: linear-gradient(to top, #f2f2f2, #fefefe);*/
   box-sizing: content-box;
+}
+#message-button{
+  width: 17px;
+  height: 23px;
+  border: 0px solid white;
+  /*position: absolute;*/
+  margin-left: -34.2px;
+  background: url(../img/mail.png) no-repeat;
+  background-position: 0px 5px;
+    display: inline-block;
+    line-height: 0;
+    vertical-align: middle;
+}
+.social-lan{
+  margin-top: 14px;
+}
+
+.social-lan a:nth-child(2){
+      margin-left: 4px;
+    margin-right: 7px;
 }
 #message:focus::-webkit-input-placeholder {line-height: 100px; transition: line-height 0.5s ease;}
 #message::-webkit-input-placeholder       {line-height: 10px;  transition: line-height 0.5s ease;}
