@@ -9,7 +9,13 @@
     <header>
       <ul class="first">
         <li>
-        <span class="news">hot news</span><div class="up-down"><a href=""><img src="img/up.png" alt=""></a><a href=""><img src="img/down.png" alt=""></a></div>
+          <span class="news">hot news</span>
+          <div class="up-down">
+            <a href="">
+              <img src="img/up.png" alt=""></a>
+            <a href="">
+              <img src="img/down.png" alt=""></a>
+          </div>
           <p class="slogan">
             The best blog about wine. We love wine and we can’t live without it. See always the latest news and reviews
           </p>
@@ -20,7 +26,7 @@
         </li>
         <li>
           <input id="search" type="search" size="10" placeholder="Search line"/>
-          <input id="search-button" type="submit" value="" />
+          <input style="outline: none;" id="search-button" type="submit" value="" />
         </li>
       </ul>
     </header>
@@ -54,7 +60,7 @@
             <span class="menu-slot">
               restaurant
               <br></span>
-              <span class="menu-under-slot">search</span>
+            <span class="menu-under-slot">search</span>
           </a>
         </li>
         <li>
@@ -77,15 +83,17 @@
     </div>
     <div class="body">
       <div class="carousel">
+      <input id="left-button-carousel" type="button"/>
         <img src="img/carousel-background.jpg" alt="">
         <div class="ball">
           <span class="ball-1">
             garry parkers
             <br>
-            <span style="letter-spacing:2.2px; font-size: 13px">restaurants</span>
+            <span class="restaurants">restaurants</span>
           </span>
           <span class="ball-2">The bloodied bodies lay stuffed and tangled in the back.</span>
         </div>
+      <input id="right-button-carousel" type="button"/>
       </div>
       <div class="left-body">
         <p class="topic">one week in pictures</p>
@@ -108,18 +116,18 @@
           <p class="topic latest-news">latest news</p>
           <a href="#" class="more">more news</a>
         </div>
-        <div class="rubric1" style="margin-top: 14px;">
+        <div class="rubric1 rubric1-margin-top">
           <img src="./img/news1.jpg" alt="">
           <div class="specification">
             <span class="firsttite">
               In Pompeii,
-              <span style="font-family: 'Georgia';">158</span>
+              <span class="latest-news-georgia">158</span>
               thermopolia with a service counter have been identified
             </span>
             <br>
             <span class="secondtext">
               12 Jul,2011
-              <span class="thirdtext">&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+              <span class="thirdtext">&nbsp;•&nbsp;</span>
               from
               <span class="thirdtext">Jake Parker</span>
             </span>
@@ -127,10 +135,10 @@
               Italian wine is wine produced in Italy, a country which is home to some of the oldest wine-producing regions in the world. Italy is one of the world's foremost producers
             </p>
             <div class="comments">12 commentes</div>
-            <img src="./img/facebook.png" height="16" width="16" style="margin-right:5px; ">
+            <img src="./img/facebook.png" height="16" width="16" class="facebook">
             <img src="./img/twitter.png">
             <span class="tags">Tags:</span>
-            <span class="thirdtext" style="top:-4px;">Dance, Dragons, Best book</span>
+            <span class="thirdtext gragons-dance">Dance, Dragons, Best book</span>
           </div>
         </div>
         <div class="rubric1">
@@ -140,7 +148,7 @@
             <br>
             <span class="secondtext">
               12 Jul,2011
-              <span class="thirdtext">&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+              <span class="thirdtext">&nbsp;•&nbsp;</span>
               from
               <span class="thirdtext">Jake Parker</span>
             </span>
@@ -148,10 +156,10 @@
               Italian wine is wine produced in Italy, a country which is home to some of the oldest wine-producing regions in the world. Italy is one of the world's foremost producers
             </p>
             <div class="comments">12 commentes</div>
-            <img src="./img/facebook.png" height="16" width="16" style="margin-right: 5px;">
+            <img src="./img/facebook.png" height="16" width="16" class="facebook">
             <img src="./img/twitter.png">
             <span class="tags">Tags:</span>
-            <span class="thirdtext" style="top:-4px;">Dance, Dragons, Best book</span>
+            <span class="thirdtext gragons-dance">Dance, Dragons, Best book</span>
           </div>
         </div>
         <div class="rubric1">
@@ -161,7 +169,7 @@
             <br>
             <span class="secondtext">
               12 Jul,2011
-              <span class="thirdtext">&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+              <span class="thirdtext">&nbsp;•&nbsp;</span>
               from
               <span class="thirdtext">Jake Parker</span>
             </span>
@@ -169,10 +177,10 @@
               Italian wine is wine produced in Italy, a country which is home to some of the oldest wine-producing regions in the world. Italy is one of the world's foremost producers
             </p>
             <div class="comments">12 commentes</div>
-            <img src="./img/facebook.png" height="16" width="16" style="margin-right: 5px;">
+            <img src="./img/facebook.png" height="16" width="16" class="facebook">
             <img src="./img/twitter.png">
             <span class="tags">Tags:</span>
-            <span class="thirdtext" style="top:-4px;">Dance, Dragons, Best book</span>
+            <span class="thirdtext gragons-dance">Dance, Dragons, Best book</span>
           </div>
         </div>
         <div class="latest-video">
@@ -180,7 +188,7 @@
           <br>
           <img src="img/video.jpg" alt=""></div>
         <div class="more-videos">
-          <span class="topic" style="padding-bottom: 35px; padding-right:8px;">more videos</span>
+          <span class="topic span-more-videos">more videos</span>
           <span class="more">all videos</span>
           <div class="url-videos">
             <a href="">
@@ -227,7 +235,7 @@
         </div>
       </div>
       <div class="right-body">
-        <span class="topic" style="margin-top: 30px; padding-right:8px;">interesting articles</span>
+        <span class="topic interesting-articles">interesting articles</span>
         <span class="more">all</span>
         <img src="img/right1.jpg" alt="">
         <p class="thirdtext right-text">Mastic Salep at Victory Garden</p>
@@ -276,17 +284,21 @@
         <span class="topic result">results</span>
         <p class="topic">subscribe</p>
         <div>
-        <input id="message" type="search" size="10" placeholder="Search line"/>
-        <input id="message-button" type="submit" value="" />
-      </div>
+          <input id="message" type="search" size="10" placeholder="Search line"/>
+          <input id="message-button" type="submit" value="" />
+        </div>
         <p class="social-lan">
-          <a href="#"><img src="img/facebook-big.png" alt=""></a>
-          <a href="#"><img src="img/twitter-big.png" alt=""></a><a href="#"><img src="img/rss-big.png" alt=""></a>
+          <a href="#">
+            <img src="img/facebook-big.png" alt=""></a>
+          <a href="#">
+            <img src="img/twitter-big.png" alt=""></a>
+          <a href="#">
+            <img src="img/rss-big.png" alt=""></a>
         </p>
       </div>
     </div>
     <footer>
-      <div>
+      <div class = "footer">
         <ul>
           <li>
             <span class="footer-gastron">
@@ -309,20 +321,20 @@
             <br>
             <a href="#">Street Walker</a>
             <br></li>
-          <li style="top: -53px; padding-left:62px">
-            <a href="#">Privacy Pilicy</a>
+          <li style="">
+            <a href="#">Privacy Policy</a>
             <br>
             <a href="#">Advertise</a>
             <br>
             <a href="#">Terms and Conditions</a>
             <br></li>
-          <li style="top: -51px; padding-left:60px">
+          <li style="">
             <a href="#">About blog</a>
             <br>
             <a href="#">Contacts us</a>
             <br>
-            <img src="img/facebook.png" alt="" style="top: 23px;">
-            <img src="img/twitter.png" alt="" style="top: 23px;"></li>
+            <img src="img/facebook.png" alt="">
+            <img src="img/twitter.png" alt=""></li>
         </ul>
 
       </div>
