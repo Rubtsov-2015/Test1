@@ -561,6 +561,9 @@ input[type="submit"] {
   margin-left: 21px;
   float: left;
 }
+.right-body img{
+  margin-bottom: 16px;
+}
 .interesting-articles{
   margin-top: 30px; padding-right:8px;
 }
@@ -599,6 +602,7 @@ input[type="submit"] {
   background-color: #e5ede7;
   height: 1px;
 }
+
 .vote ul{
   float: left;
   padding-left: 4px;
