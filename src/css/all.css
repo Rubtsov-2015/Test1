@@ -89,7 +89,7 @@ footer li{
 }
 .footer li:nth-child(4){
 
-  padding-left::;px;
+  padding-left: 64px;
   vertical-align: top;
 }
 footer div{
@@ -330,6 +330,7 @@ ul.first li {
 .carousel {
   padding-top: 29px;
   margin-left: 32px;
+  margin-bottom: 29px;
   width: 933px;
   height: 230px;
 }
@@ -345,6 +346,8 @@ ul.first li {
   left: -45px;
   top: 111px;
   border-style: none;
+  cursor: pointer;
+  outline: none;
 }
 #right-button-carousel{
   background-color: #fff;
@@ -358,6 +361,8 @@ ul.first li {
   background-repeat: no-repeat;
   background-position: center;
   border-style: none;
+  cursor: pointer;
+  outline: none;
 }
 input[type="button"] {
   outline: none;
@@ -380,7 +385,7 @@ input[type="submit"] {
   background-color: #ace3db;
   border-radius: 100px;
   position: absolute;
-  top: 48px;
+  top: 18px;
   left: 392px;
 }
 .ball-1 {
@@ -539,12 +544,17 @@ input[type="submit"] {
 /*----------------------------------*/
 
 .latest-video{
-  margin: 15px 0 20px -1px;
+  margin: 31px 0 20px -2px;
   float: left;
 }
+.video-text{
+  margin-bottom: 22px;
+}
 .more-videos{
-  margin-left: 466px;
+  margin-left: 2px;
   margin-top: 30px;
+  float: right;
+  width: 229px;
 }
 .span-more-videos{
   padding-bottom: 35px; padding-right:8px;
